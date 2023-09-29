@@ -17,6 +17,7 @@
     "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.7.1",
     "sass": "^1.68.0",
     "sass-loader": "10.1.1"
   }

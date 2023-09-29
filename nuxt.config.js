@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  // target: 'static',
   head: {
     title: 'NuxtImg',
     htmlAttrs: {
@@ -29,11 +30,13 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/axios',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
+    '@nuxt/image',
     '@nuxtjs/axios',
   ],
 
@@ -42,7 +45,11 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
-
+  image: {
+    dir: 'assets/images',
+    domains: ['https://picsum.photos'],
+    // adding or removing alias didn't seem to change anything here
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     loaders: {

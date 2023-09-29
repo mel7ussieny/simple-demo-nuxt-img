@@ -2,7 +2,7 @@
 <template>
   <div class="selector">
     <div class="primary-img">
-      <img :src="currentImg.src" width="600px" :alt="currentImg.alt" />
+      <nuxt-img  src="250-1200x1200.jpg" sizes="sm:200px,md:500px" :alt="currentImg.alt"></nuxt-img>
 
       <div class="controls">
         <button class="controls-prev" type="button" @click="prevImg">
