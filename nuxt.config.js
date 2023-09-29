@@ -1,6 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  // target: 'static',
+  target: 'static',
   head: {
     title: 'NuxtImg',
     htmlAttrs: {
@@ -50,6 +50,9 @@ export default {
     domains: ['https://picsum.photos'],
     // adding or removing alias didn't seem to change anything here
   },
+  // serverMiddleware: {
+  //   '/_ipx': '~/server/middleware/ipx.js'
+  // },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     loaders: {
